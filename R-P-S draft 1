@@ -1,0 +1,27 @@
+import time
+
+print("Welcome to rock paper scissors.")
+time.sleep(5)
+print("If you win i will give you ¥100. no cap.")
+time.sleep(5)
+print("Good luck\n\n")
+time.sleep(3)
+
+rock = "1"
+paper = "2"
+scissors = "3"
+decision = input("Rock(1)\nPaper(2)\nScissors(3)\n\n>>> ")
+
+while decision != "1" or "2" or "3":
+  print("Enter either 1, 2 or three.")
+  decision = input("Rock(1)\nPaper(2)\nScissors(3)\n\n>>> ")
+  if decision == "1":
+    print("Paper. I win.\n")
+  elif decision == "2":
+      print("scissors. You're not very good at this are you.\n")
+  elif decision == "3":
+      print("Rock. please get better.\n")
+  else:
+    print("error.")
+print("error?")
+time.sleep(10)
